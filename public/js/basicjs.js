@@ -7,5 +7,7 @@ $('.svg-hamburger').on('click', function () {
     $('.chat-row2, .chat-row3, .chat-row4, .chat-row5, .chat-row6').toggleClass('chat-slideup');
     $('.chat-row1 div').toggleClass('rotate-arrow');
   });
-
+  $('.body2-row3-button1 button').on('click', function () {
+  $('.body2-row2-extra-chat-row6 button').click();
+})
 })

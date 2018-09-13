@@ -12,7 +12,8 @@
   part time teaching job in bhopal, female home tutor in bhopal, home tuition in bhopal">
 
 
-
+  <link rel="stylesheet" href="./stylesheets/alertify.core.css" />
+  <link rel="stylesheet" href="./stylesheets/alertify.default.css" id="toggleCSS" />
 
 <!-- for fontawesome -->
 
@@ -27,7 +28,7 @@
 <div class="chat-outer-cover">
   <form method="POST"
         action="https://docs.google.com/forms/d/1XEPDKelRPl7pEPs-cKxxa5X9JOYPiICMUjzd9AdaG6E"
-        onsubmit="return window.submitGoogleForm(this);">
+        onsubmit="return window.submitGoogleForm(this);" id="chat-validation">
 
   <div class="chat">
     <div class="chat-cover">
@@ -35,17 +36,17 @@
       Any queries?&nbsp;&nbsp;<div class="chat-arrow"><i class="fas fa-angle-up"></i></div>
     </div>
     <div class="chat-row2">
-      <input type="text" name="entry.635019513" placeholder="name">
+      <input type="text" name="entry.635019513" placeholder="name" autocomplete="off">
     </div>
 
     <div class="chat-row3">
-      <input type="text" name="entry.352553147" placeholder="email-id">
+      <input type="text" name="entry.352553147" placeholder="email-id" autocomplete="off">
     </div>
     <div class="chat-row4">
-      <input type="text" name="entry.676157046" placeholder="phone no.">
+      <input type="text" name="entry.676157046" placeholder="phone no." autocomplete="off">
     </div>
     <div class="chat-row5">
-      <textarea name="entry.1651900709" placeholder="Query?"></textarea>
+      <textarea name="entry.1651900709" placeholder="Query?" autocomplete="off"></textarea>
     </div>
     <div class="chat-row6">
         <button type="submit">Send</button>
@@ -230,24 +231,24 @@
 
 
 <div class="navbar-content">
-<div>
+<div onClick="window.location.href='/getTutor';">
   <div>Get Tutor</div>
   <div class="underline"></div>
 </div>
-<div>
+<div onClick="window.location.href='/getStudent';">
 <div>Get Student</div>
 <div class="underline"></div>
 </div>
-<div>
+<div onClick="window.location.href='#section-1';">
 <div>How This Works</div>
 <div class="underline"></div>
 </div>
-<div>
-<div>About Us</div>
+<div onClick="window.location.href='#section-6';">
+<div>Contact Us</div>
 <div class="underline"></div>
 </div>
-<div>
-<div>Log In</div>
+<div onClick="window.location.href='/';">
+<div>Home</div>
 <div class="underline"></div>
 </div>
 </div>
@@ -256,96 +257,9 @@
   <p class="top-description-head">Finding Tutor<br>Made Easy</p>
   <p class="top-description-par">Where students meet tutors.</p>
   <div class="hor-line1"></div>
-  <button class="find-tutor1" type="button" name="button" onClick="window.location.href='#section-1';">Find tutors for your location &nbsp; <div><i class="fas fa-caret-right animated infinite jello"></i></div></button>
+  <button class="find-tutor1" type="button" name="button" onClick="window.location.href='#section-2';">Find tutors for your location &nbsp; <div><i class="fas fa-caret-right animated infinite jello"></i></div></button>
 </div>
 
-
-
-<div class="arrow-intro-cover">
-
-<div class="arrow-intro">
-  <p>know more</p>
-  <svg class="arrow"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:cc="http://creativecommons.org/ns#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:svg="http://www.w3.org/2000/svg"
-     xmlns="http://www.w3.org/2000/svg"
-     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-     width="744.094488186"
-     height="1052.36220472"
-     viewBox="0.0 0.0 196.875 278.4375"
-     version="1.1"
-     id="svg8"
-     inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-     sodipodi:docname="drawing5.svg">
-    <sodipodi:namedview
-       id="base"
-       pagecolor="#ffffff"
-       bordercolor="#666666"
-       borderopacity="1.0"
-       inkscape:pageopacity="0.0"
-       inkscape:pageshadow="2"
-       inkscape:zoom="0.32"
-       inkscape:cx="-20.47732"
-       inkscape:cy="479.36884"
-       inkscape:document-units="px"
-       inkscape:current-layer="layer1"
-       showgrid="false"
-       inkscape:window-width="1366"
-       inkscape:window-height="745"
-       inkscape:window-x="-8"
-       inkscape:window-y="-8"
-       inkscape:window-maximized="1" />
-    <defs
-       id="defs2" />
-    <metadata
-       id="metadata5">
-      <rdf:RDF>
-        <cc:Work
-           rdf:about="">
-          <dc:format>image/svg+xml</dc:format>
-          <dc:type
-             rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-          <dc:title></dc:title>
-        </cc:Work>
-      </rdf:RDF>
-    </metadata>
-    <g
-       transform="matrix(0.937500,0.000000,0.000000,0.937500,0.000000,0.000000)"
-       id="layer1"
-       inkscape:groupmode="layer"
-       inkscape:label="Layer 1">
-      <path
-         inkscape:connector-curvature="0"
-         d="m 54.110342,15.388494 c 1.122873,1.278391 1.935337,2.567167 2.893162,3.851428 1.482868,2.137836 3.423074,4.257251 5.862293,6.355149 2.847975,2.243787 5.819985,4.480238 8.907387,6.709795 2.182395,1.496228 4.35445,2.99358 6.383016,4.499539 1.05711,0.820141 2.181584,1.639661 3.688729,2.428576 0.17361,0.08785 0.347223,0.175703 0.52083,0.263546 0,0 -9.492195,1.120136 -9.492195,1.120136 v 0 c -0.161419,-0.08989 -0.322841,-0.179771 -0.484259,-0.269655 -1.443634,-0.807677 -2.476347,-1.645784 -3.474032,-2.482146 -1.805559,-1.52641 -3.820086,-3.042487 -5.865122,-4.555139 -2.933712,-2.24282 -5.936007,-4.481642 -8.834578,-6.726544 -2.455196,-2.095183 -4.586458,-4.205828 -6.16466,-6.339174 -1.050084,-1.255059 -1.928068,-2.522299 -3.638785,-3.746882 0,0 9.698214,-1.108629 9.698214,-1.108629 z"
-         id="path817"
-         style="opacity:0.72000002;fill:none;fill-opacity:1;stroke:none;stroke-width:4.43152571;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke" />
-      <path
-         inkscape:connector-curvature="0"
-         d="m 82.372043,56.03206 c 0.416972,0.0051 0.835543,0.0026 1.250918,0.01538 3.488286,0.102788 6.936632,0.276693 10.435032,0.365336 5.558888,0.140855 8.150567,0.164355 13.901707,0.251965 10.75936,0.144296 21.52902,0.16578 32.2967,0.170522 0,0 -7.71839,1.704686 -7.71839,1.704686 v 0 c -10.72806,-0.07353 -21.45676,-0.135895 -32.18515,-0.204574 -6.114757,-0.05123 -8.543639,-0.06288 -14.459253,-0.143219 -14.063408,-0.190985 1.78229,0.01468 -8.745749,-0.158631 -2.112707,-0.03477 -2.029142,-0.02631 -3.784344,-0.0069 0,0 9.008529,-1.994589 9.008529,-1.994589 z"
-         id="path819"
-         style="opacity:0.72000002;fill:none;fill-opacity:1;stroke:none;stroke-width:5.36036587;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke" />
-      <path
-         inkscape:connector-curvature="0"
-         d="m 160.01202,57.333307 c -4.66824,2.414636 -8.43574,4.97909 -12.24721,7.525837 -5.30478,3.487023 -9.71094,7.086025 -13.84991,10.713146 -1.76387,1.508785 -3.07902,3.059034 -4.42338,4.605469 0,0 -9.72356,1.405861 -9.72356,1.405861 v 0 c 1.63436,-1.580434 3.09114,-3.179336 5.08941,-4.723062 4.42595,-3.622506 8.91978,-7.237362 14.08098,-10.770632 3.57115,-2.475693 7.08582,-4.960346 11.02524,-7.384323 0,0 10.04843,-1.372296 10.04843,-1.372296 z"
-         id="path821"
-         style="opacity:0.72000002;fill:none;fill-opacity:1;stroke:none;stroke-width:5.36036587;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path827"
-         d="M 12.559272,8.4548715 97.872385,85.702234 v 0 z"
-         style="fill:none;stroke:#f0f8ff;stroke-width:10.37432003;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path829"
-         d="M 99.821289,85.705834 197.6846,8.164659"
-         style="fill:none;stroke:#f0f8ff;stroke-width:10.36036587;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
-  </svg>
-</div>
-</div>
 
 </div>
 
@@ -362,7 +276,7 @@
 
 
 
-<div class="body1">
+<div class="body1" id="section-1">
   <div class="body1-row1">
     <h2>The Education You Want. The Attention You Deserve.</h2>
     <p class="body1-row2">Personal Tutor + Personal Care = 100%Results</p>
@@ -623,24 +537,43 @@
 
 
 
-<div class="body2" id="section-1">
+<div class="body2" id="section-2">
   <p class="body2-row1">We provide only verified, professionally competent and befitting Home Tutors in Bhopal</p>
 <div class="body2-row2">
-    <p>Post / Search your requirement</p>
+    <p>Post/Search your requirement</p>
 
 <div class="body2-row2-extra">
-  <div class="body-row2-extra-col1">
-    <p>your name</p>
-    <input type="text" name="" id="">
+  <form method="POST"
+        action="https://docs.google.com/forms/d/1XEPDKelRPl7pEPs-cKxxa5X9JOYPiICMUjzd9AdaG6E"
+        onsubmit="return window.submitGoogleForm1(this);" id="chat-validation1">
+
+  <div class="body2-row2-extra-chat">
+    <div class="body2-row2-extra-chat-cover">
+    <div class="body2-row2-extra-chat-row1">
+
+    </div>
+    <div class="body2-row2-extra-chat-row2">
+      <p>your name</p>
+      <input type="text" name="entry.635019513" placeholder="name" autocomplete="off">
+    </div>
+
+    <div class="body2-row2-extra-chat-row3">
+      <p>your email-id</p>
+      <input type="text" name="entry.352553147" placeholder="email-id" autocomplete="off">
+    </div>
+    <div class="body2-row2-extra-chat-row4">
+      <p>your phone no.</p>
+      <input type="text" name="entry.676157046" placeholder="phone no." autocomplete="off">
+    </div>
+    <div class="body2-row2-extra-chat-row5">
+      <textarea name="entry.1651900709" placeholder="Query?" autocomplete="off"></textarea>
+    </div>
+    <div class="body2-row2-extra-chat-row6">
+        <button type="submit">Send</button>
+    </div>
+    </div>
   </div>
-  <div class="body-row2-extra-col2">
-    <p>your email-id</p>
-    <input type="text" name="" id="">
-  </div>
-  <div class="body-row2-extra-col3">
-    <p>your phone no.</p>
-    <input type="text" name="" id="">
-  </div>
+    </form>
 </div>
 
   <div class="body2-row2-row1">
@@ -717,7 +650,7 @@
 
 
 
-<div class="body3">
+<div class="body3" id="section-3">
   <div class="body3-internal-cover">
 <p class="body3-row1">We are not just a service provider, we are brand for the befitting personal tutoring care of your child.</p>
 <div class="body3-row2">
@@ -739,7 +672,7 @@
 
 
 
-<div class="body4">
+<div class="body4" id="section-4">
   <div class="body4-row1">
     <p>See what others has to say...</p>
   </div>
@@ -804,7 +737,7 @@
 
 
 
-<div class="body5">
+<div class="body5" id="section-5">
   <div class="body5-row1">Meet some of our tutors.</div>
   <div class="body5-row2">
     <div class="body5-row2-col1">
@@ -877,7 +810,7 @@
 
 
 
-<div class="footer">
+<div class="footer" id="section-6">
 
 
 
@@ -963,7 +896,13 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+<script type="text/javascript" src="./js/alertify.min.js"></script>
 <script type="text/javascript" src="./js/google-form.js"></script>
+<script type="text/javascript" src="./js/google-form1.js"></script>
 <script src="./js/basicjs.js" type="text/javascript"></script>
+<script type="text/javascript" src="./js/validation.js"></script>
+<script type="text/javascript" src="./js/validation1.js"></script>
+
 </body>
 </html>

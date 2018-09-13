@@ -16,14 +16,14 @@ app.get('/', (req, res) => {
 })
 
 
-// app.get('/getTutor', (req, res) => {
-//   res.status(200).sendFile(path.join(__dirname, '..', 'public', 'getTutor.html'));
-// });
-//
-//
-// app.get('/getStudent', (req, res) => {
-//   res.status(200).sendFile(path.join(__dirname, '..', 'public', 'getStudent.html'));
-// })
+app.get('/getTutor', (req, res) => {
+  res.status(200).sendFile(path.join(__dirname, '..', 'public', 'getTutor.html'));
+});
+
+
+app.get('/getStudent', (req, res) => {
+  res.status(200).sendFile(path.join(__dirname, '..', 'public', 'getStudent.html'));
+})
 
 
 

@@ -1,5 +1,5 @@
 !function(exports) {
-  exports.submitGoogleForm = submitGoogleForm;
+  exports.submitGoogleForm1 = submitGoogleForm1;
 
   function reset () {
           $("#toggleCSS").attr("href", "../stylesheets/alertify.default.css");
@@ -14,10 +14,10 @@
           });
         }
 
-  function submitGoogleForm(form) {
+  function submitGoogleForm1(form) {
 
     try {
-      if($('.chat-row2 label').css('display') == 'inline' || $('.chat-row3 label').css('display') == 'inline' || $('.chat-row4 label').css('display') == 'inline' || $('.chat-row5 label').css('display') == 'inline') {
+      if($('.body2-row2-extra-chat-row2 label').css('display') == 'inline' || $('.body2-row2-extra-chat-row3 label').css('display') == 'inline' || $('.body2-row2-extra-chat-row4 label').css('display') == 'inline') {
         reset();
          alertify.error("Fill up the form correctly.");
     } else {
