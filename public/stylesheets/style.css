@@ -957,6 +957,7 @@ height: 200px;
     /* justify-content: space-around; */
     align-items: center;
     background-color: rgba(0,0,0,0);
+    overflow-y: scroll;
   }
   .chat-cover > div {
 
