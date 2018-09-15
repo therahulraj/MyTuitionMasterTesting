@@ -971,8 +971,7 @@ height: 200px;
   .chat-cover.mobile-symbol-slide {
     height: 100vh;
     background-color: rgba(0,0,0,0.9);
-    position: absolute;
-    top: 0;
+    
   }
 
     .chat-cover.mobile-symbol-slide > div {
