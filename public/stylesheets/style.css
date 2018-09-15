@@ -923,6 +923,12 @@ height: 200px;
 
 
 @media (max-width: 800px) {
+  .top-head {
+    background-image: url("./../images/peter-hershey3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
   .body3 {
     height: auto;
     background-image: url('../images/hanscopy.jpg');
@@ -954,6 +960,7 @@ height: 200px;
   .chat-cover  {
     display: flex;
     flex-flow: column wrap;
+    /* justify-content: space-around; */
     align-items: center;
     background-color: rgba(0,0,0,0);
     border: 0px;
@@ -963,6 +970,7 @@ height: 200px;
   .chat-cover > div {
 
   }
+
   .chat-row2, .chat-row3, .chat-row4, .chat-row5 {
     padding: 0;
     margin: 0;
@@ -971,7 +979,8 @@ height: 200px;
   .chat-cover.mobile-symbol-slide {
     height: 100vh;
     background-color: rgba(0,0,0,0.9);
-    
+    position: absolute;
+    top: 0;
   }
 
     .chat-cover.mobile-symbol-slide > div {
@@ -1036,7 +1045,7 @@ height: 200px;
 @media (max-width: 500px) {
 
    .top-description {
-     top: 10vh;
+     top: 22vh;
      left: 10vw;
    }
    .top-description-head {
