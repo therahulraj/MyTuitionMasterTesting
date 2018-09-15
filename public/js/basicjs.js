@@ -11,12 +11,13 @@ $('.mobile-symbol').on('click', function () {
       $('.chat-cover').addClass('mobile-symbol-slide');
       $('.chat').addClass('chat-mobile-symbol-slide');
       $('.chat-arrow').addClass('rotate-arrow');
-      $('body').toggleClass('stop-scrolling');
+      $('body').addClass('stop-scrolling');
     });
     $('.chat-row1').on('click', function () {
       $('.chat-cover').removeClass('mobile-symbol-slide');
         $('.chat').removeClass('chat-mobile-symbol-slide');
         $('.chat-arrow').removeClass('rotate-arrow');
+              $('body').removeClass('stop-scrolling');
     });
 
 } else if(window.innerWidth > 800) {
