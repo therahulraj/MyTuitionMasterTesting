@@ -957,7 +957,7 @@ height: 200px;
   .chat-cover  {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     background-color: rgba(0,0,0,0);
   }
@@ -1003,6 +1003,8 @@ height: 200px;
   }
 .chat-row6 {
   margin-top: 0px;
+  position: absolute;
+  bottom: 0;
 }
 .mobile-symbol {
   display: block;
