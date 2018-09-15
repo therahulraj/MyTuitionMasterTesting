@@ -11,6 +11,7 @@ $('.mobile-symbol').on('click', function () {
       $('.chat-cover').addClass('mobile-symbol-slide');
       $('.chat').addClass('chat-mobile-symbol-slide');
       $('.chat-arrow').addClass('rotate-arrow');
+      $('body').toggleClass('stop-scrolling');
     });
     $('.chat-row1').on('click', function () {
       $('.chat-cover').removeClass('mobile-symbol-slide');
