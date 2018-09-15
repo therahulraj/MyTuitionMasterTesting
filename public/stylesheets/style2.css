@@ -10,9 +10,6 @@
 .top-head {
   height: auto;
   width: 100vw;
-  background-image: url("./../images/peter-hershey4.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .navbar {
   width: 100vw;
@@ -136,10 +133,13 @@ animation: logo-path1 .7s ease-in .5s forwards;
 .navbar-content > div:hover > .underline {
   animation: underline .5s forwards;
 }
+.form-body {
 
+}
 .body1 {
   text-align: center;
   margin-top: 50px;
+
 }
 .body1 > div {
   display: flex;
@@ -524,6 +524,7 @@ animation: logo-path1 .7s ease-in .5s forwards;
 }
 }
 @media (max-width: 800px) {
+
   .body1-row1 div:first-child p  {
     font-size: 35px;
   }
@@ -557,6 +558,7 @@ animation: logo-path1 .7s ease-in .5s forwards;
 
 }
 @media (max-width: 500px) {
+
   .navbar-content {
     width: 100vw;
   }
