@@ -27,14 +27,6 @@ body.stop-scrolling {
   outline: none;
 }
 
-.chat-outer-cover:hover ~ .top-head {
-  filter: contrast(.6);
-  transition: .2s all;
-}
-.chat-outer-cover:hover ~ .body1 {
-  filter: contrast(.6);
-  transition: .2s all;
-}
 
 .top-head {
   height: 100vh;
@@ -227,6 +219,10 @@ bottom: 0;
 .chat-cover > div {
   padding: 10px 0;
 }
+.mobile-symbol {
+  color: rgb(18,184,134);
+  font-size: 40px;
+}
 .chat-cover > div > input {
   font-size: 15px;
   padding: 5px;
@@ -256,8 +252,10 @@ margin-top: 15px;
     background-color: #fff;
 }
 
-.chat-row1 div {
-  display: inline;
+.chat-row1  {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
 }
 .chat-cover textarea {
   z-index: 0;
@@ -281,17 +279,22 @@ margin-top: 15px;
   font-weight: 600;
   border: 1px solid #fff;
   border-radius: 3px;
+
 }
 
 
-.chat-row2, .chat-row3, .chat-row4, .chat-row5, .chat-row6 {
+.chat-row2, .chat-row3, .chat-row4, .chat-row5, .chat-row6, .mobile-symbol {
   display: none;
-  transition: all .2s;
+
 }
 .chat-row2.chat-slideup, .chat-row3.chat-slideup, .chat-row4.chat-slideup, .chat-row5.chat-slideup, .chat-row6.chat-slideup {
   display: block;
 }
 
+.chat-arrow.rotate-arrow {
+  transform: rotate(180deg);
+  transition: all .5s;
+}
  /* --------------navbar------------------------  */
 
 
@@ -922,7 +925,7 @@ height: 200px;
 @media (max-width: 800px) {
   .body3 {
     height: auto;
-      background-image: url('../images/hanscopy.jpg');
+    background-image: url('../images/hanscopy.jpg');
   }
   .body3-internal-cover {
     width: 100%;
@@ -947,6 +950,85 @@ height: 200px;
   width: 300px;
   height: 150px;
   }
+
+  .chat.chat-mobile-symbol-slide {
+    top: 0;
+  }
+  .chat-cover  {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0,0,0,0);
+  }
+  .chat-cover > div {
+
+  }
+  .chat-row2, .chat-row3, .chat-row4, .chat-row5 {
+    padding: 0;
+    margin: 0;
+    line-height: 8px;
+  }
+  .chat-cover.mobile-symbol-slide {
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+  }
+
+    .chat-cover.mobile-symbol-slide > div {
+      width: 100vw;
+    }
+  .chat-cover > div > input {
+    font-size: 15px;
+    padding: 5px;
+    width: 60%;
+   display: inline-block;
+  }
+  .chat-cover > div > label {
+    margin: 0 0 0 1000px;
+  }
+  .chat-row1{
+    padding: 10px 0;
+     width: 100vw;
+      display: flex;
+      flex-direction: row wrap;
+  }
+
+
+  .chat-cover textarea {
+    z-index: 0;
+    margin-top: 0px;
+    width: 60%;
+    height: 100px;
+    display: inline-block;
+  }
+.chat-row6 {
+  margin-top: 0px;
+}
+.mobile-symbol {
+  display: block;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+.chat-row1 {
+  display: none;
+}
+
+  .chat-row2, .chat-row3, .chat-row4, .chat-row5, .chat-row6 {
+    display: none;
+    transition: all .2s;
+  }
+
+  .chat-cover.mobile-symbol-slide > .chat-row1, .chat-cover.mobile-symbol-slide > .chat-row2, .chat-cover.mobile-symbol-slide > .chat-row3, .chat-cover.mobile-symbol-slide > .chat-row4, .chat-cover.mobile-symbol-slide > .chat-row5, .chat-cover.mobile-symbol-slide > .chat-row6 {
+    display: block;
+  }
+  .chat-cover.mobile-symbol-slide > .mobile-symbol {
+    display: none;
+  }
+    .chat-cover.mobile-symbol-slide {
+      background-color: rgba(0,0,0,0.95);
+    }
 }
 
 @media (max-width: 500px) {
