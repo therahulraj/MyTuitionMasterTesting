@@ -135,7 +135,24 @@ animation: logo-path1 .7s ease-in .5s forwards;
 .navbar-content > div:hover > .underline {
   animation: underline .5s forwards;
 }
-
+.getStudentBody1Row1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.getStudentBody1Row1 > div {
+   text-align: center;
+     padding: 30px 0;
+}
+.getStudentBody1Row1 p {
+  font-size: 25px;
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+}
+.getStudentBody1Row1 svg {
+  height: 150px;
+}
 .body1 {
   text-align: center;
 }
@@ -143,19 +160,20 @@ animation: logo-path1 .7s ease-in .5s forwards;
 .body1-row1 {
     font-family: 'Work Sans', sans-serif;
     font-size: 40px;
-    color: #fff;
+    color: #000;
     font-weight: 500;
+    margin-top: 50px;
 }
 .body1-row2-exp {
   font-family: 'Work Sans', sans-serif;
   font-size: 35px;
-  color: #fff;
+  color: #000;
   font-weight: 400;
 }
 .body1-row3 {
   font-family: 'Work Sans', sans-serif;
   font-size: 45px;
-  color: #fff;
+  color: #000;
   font-weight: 700;
 }
 
@@ -172,7 +190,7 @@ animation: logo-path1 .7s ease-in .5s forwards;
   display: block;
 }
 .body1-row2-row1-row1 div label {
-  color: #fff;
+  color: #000;
   font-family: 'Work Sans', sans-serif;
 
 }
@@ -185,16 +203,16 @@ animation: logo-path1 .7s ease-in .5s forwards;
   padding: 10px;
   font-size: 20px;
   background-color: rgba(0,0,0,0);
-  border: 1.2px solid #fff;
+
   border-radius: 3px;
-  box-shadow: 0px 0px 10px #fff;
+  box-shadow: 0px 0px 10px #000;
   margin-top: 10px;
-  color: #fff;
+  color: #000;
 }
 .body1-row2-row1-row1 > div > p {
   font-size: 15px;
   font-family: 'Work Sans', sans-serif;
-  color: #fff;
+  color: #000;
   opacity: .5;
   font-weight: 500;
 }
@@ -203,11 +221,11 @@ animation: logo-path1 .7s ease-in .5s forwards;
       font-family: 'Work Sans', sans-serif;
       padding: 5px;
       background-color: rgba(0,0,0,0);
-      border: 1.2px solid #fff;
+
       border-radius: 3px;
         margin-top: 10px;
-      box-shadow: 0px 0px 10px #fff;
-      color: #fff;
+      box-shadow: 0px 0px 10px #000;
+      color: #000;
 }
 .body1-row2-row1-row1-row6 {
   opacity: 0;
@@ -226,7 +244,7 @@ animation: logo-path1 .7s ease-in .5s forwards;
 .body1-row4 div p {
   font-size: 15px;
   font-family: 'Work Sans', sans-serif;
-  color: #fff;
+  color: #000;
   opacity: .5;
   font-weight: 500;
 }
@@ -236,10 +254,10 @@ animation: logo-path1 .7s ease-in .5s forwards;
     padding: 5px;
     margin-top: 10px;
     background-color: rgba(0,0,0,0);
-    border: 1.2px solid #fff;
+
     border-radius: 3px;
-    box-shadow: 0px 0px 10px #fff;
-    color: #fff;
+    box-shadow: 0px 0px 10px #000;
+    color: #000;
 }
 .body1-row5 {
   display: flex;
@@ -252,7 +270,7 @@ animation: logo-path1 .7s ease-in .5s forwards;
 .body1-row5 div p {
   font-size: 15px;
   font-family: 'Work Sans', sans-serif;
-  color: #fff;
+  color: #000;
   opacity: .5;
   font-weight: 500;
 }
@@ -262,19 +280,19 @@ animation: logo-path1 .7s ease-in .5s forwards;
     padding: 5px;
     margin-top: 10px;
     background-color: rgba(0,0,0,0);
-    border: 1.2px solid #fff;
+
     border-radius: 3px;
-    box-shadow: 0px 0px 10px #fff;
-    color: #fff;
+    box-shadow: 0px 0px 10px #000;
+    color: #000;
 }
 .body1-row5 div select option {
     font-size: 20px;
     font-family: 'Work Sans', sans-serif;
     padding: 5px;
     background-color: rgba(0,0,0,0);
-    border: 1.2px solid #fff;
+
     border-radius: 3px;
-    box-shadow: 0px 0px 10px #fff;
+    box-shadow: 0px 0px 10px #000;
     color: #000;
 }
 .body1-row6 {
@@ -291,7 +309,7 @@ animation: logo-path1 .7s ease-in .5s forwards;
 .body1-row6 div p {
   font-size: 15px;
   font-family: 'Work Sans', sans-serif;
-  color: #fff;
+  color: #000;
   opacity: .5;
   font-weight: 500;
   margin-bottom: 10px;
@@ -301,10 +319,10 @@ animation: logo-path1 .7s ease-in .5s forwards;
     font-family: 'Work Sans', sans-serif;
     padding: 5px;
     background-color: rgba(0,0,0,0);
-    border: 1.2px solid #fff;
+
     border-radius: 3px;
-    box-shadow: 0px 0px 10px #fff;
-    color: #fff;
+    box-shadow: 0px 0px 10px #000;
+    color: #000;
 }
 .body1-row6 div textarea {
   width: 300px;
@@ -312,10 +330,10 @@ animation: logo-path1 .7s ease-in .5s forwards;
   padding: 10px;
   font-size: 20px;
   background-color: rgba(0,0,0,0);
-  border: 1.2px solid #fff;
+
   border-radius: 3px;
-  box-shadow: 0px 0px 10px #fff;
-  color: #fff;
+  box-shadow: 0px 0px 10px #000;
+  color: #000;
 }
 .body1-row7 {
   padding-bottom: 30px;
@@ -327,16 +345,16 @@ animation: logo-path1 .7s ease-in .5s forwards;
 }
 .body1-row7 p {
   font-size: 20px;
-  color: #fff;
+  color: #000;
   font-family: 'Work Sans', sans-serif;
   padding: 10px 0;
 }
 .body1-row7 button {
   padding: 10px 25px;
-  background-color: #fff;
-  border-radius: 3px;
+  background-color: #000;
+  border-radius: 5px;
   border: 2px solid #fff;
-  color: #000;
+  color: #fff;
   cursor: pointer;
   font-size: 15px;
   font-weight: 700;

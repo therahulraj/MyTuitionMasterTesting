@@ -6,5 +6,5 @@ $('.svg-hamburger').on('click', function () {
   $('.body1-row5 button').on('click', function () {
     $('.body1-row2-row1-row1-row6 button').click();
   })
-        $('.top-head').parallax({imageSrc: '../images/getTutor1copy.jpg'});
+        $('.top-head').parallax({imageSrc: '../images/getTutor1.jpg'});
 })
