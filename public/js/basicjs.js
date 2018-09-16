@@ -7,6 +7,30 @@ $(document).ready(function() {
     $('.body2-row3-button1 button').on('click', function () {
       $('.body2-row2-extra-chat-row6 button').click();
     });
+    $('.getTutorNav').on('click', function () {
+      window.location.href = "/getTutor";
+        $('.navbar-content').removeClass('navbar-content-slide');
+        $('body').removeClass('stop-scrolling');
+    });
+    $('.getStudentNav').on('click', function () {
+      window.location.href = "/getStudent";
+        $('.navbar-content').removeClass('navbar-content-slide');
+        $('body').removeClass('stop-scrolling');
+    });
+    $('.howThisWorksNav').on('click', function () {
+      window.location.href = "#section-1";
+        $('.navbar-content').removeClass('navbar-content-slide');
+        $('body').removeClass('stop-scrolling');
+    });
+    $('.contactUsNav').on('click', function () {
+      window.location.href = "#section-6";
+        $('.navbar-content').removeClass('navbar-content-slide');
+        $('body').removeClass('stop-scrolling');
+    });
+    $('.homeNav').on('click', function () {
+      window.location.href = "/";
+        $('.navbar-content').removeClass('navbar-content-slide');
+    })
   $win.on('scroll', function () {
       var top = $win.scrollTop();
       if(top > $('#section-6').offset().top - 200) {
