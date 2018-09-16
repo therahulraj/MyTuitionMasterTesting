@@ -17,7 +17,10 @@
   function submitGoogleForm(form) {
 
     try {
-      if($('.chat-row2 label').css('display') == 'inline' || $('.chat-row3 label').css('display') == 'inline' || $('.chat-row4 label').css('display') == 'inline' || $('.chat-row5 label').css('display') == 'inline') {
+       if ($('.chat-cover label').length == 0) {
+          alertify.error("complete the form.");
+       }
+      else if($('.chat-row2 label').css('display') == 'inline' || $('.chat-row3 label').css('display') == 'inline' || $('.chat-row4 label').css('display') == 'inline' || $('.chat-row5 label').css('display') == 'inline') {
         reset();
          alertify.error("Fill up the form correctly.");
     } else {
@@ -28,7 +31,7 @@
 
       var data = [].slice.call(form).map(function(control) {
         return 'value' in control && control.name ?
-          control.name + '=' + (control.value === undefined ? '' : control.value) :
+          control.name + '=' + (control.value === undefined ? '' : 'chat: ' + control.value) :
           '';
       }).join('&');
       var xhr = new XMLHttpRequest();
