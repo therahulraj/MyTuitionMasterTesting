@@ -7,6 +7,9 @@ $(document).ready(function() {
     $('.body2-row3-button1 button').on('click', function () {
       $('.body2-row2-extra-chat-row6 button').click();
     });
+    $('.body2-row3-button2 button').on('click', function () {
+      window.location.href = "/getTutor";
+    })
     $('.getTutorNav').on('click', function () {
       window.location.href = "/getTutor";
         $('.navbar-content').removeClass('navbar-content-slide');

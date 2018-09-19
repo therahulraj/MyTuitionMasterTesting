@@ -15,6 +15,7 @@
         }
 
   function submitGoogleForm(form) {
+
     try {
         var tryGoogle = 'turtor details: \n';
         tryGoogle += 'location: ' + $('.body1-row5-select1').val() +'\n';
@@ -23,18 +24,19 @@
         tryGoogle += 'experience: ' + $('.body1-row6-col1 input').val() +'\n';
         tryGoogle += 'address: ' + $('.body1-row6-col2 textarea').val() +'\n';
         tryGoogle += 'qualification: ' +  $('.body1-row6-col3 textarea').val() +'\n';
-   if($('.body1-row2-row1-row1 label').length == 0) {
-      alertify.error("complete the form.");
-   }
-      else if($('.body1-row2-row1-row1-row2 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row3 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row4 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row5 label').css('display') == 'inline') {
+        if($('.body1-row2-row1-row1 label').length == 0) {
+           alertify.error("complete the form.");
+        }
+           else if($('.body1-row2-row1-row1-row2 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row3 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row4 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row5 label').css('display') == 'inline') {
+             reset();
+              alertify.error("Fill up the form correctly.");
+
+      } else {
         reset();
-         alertify.error("Fill up the form correctly.");
+        alertify.success("your message was sent successfully.");
 
- } else {
-   reset();
-   alertify.success("your message was sent successfully.");
+       }
 
-  }
 
   var data = [].slice.call(form).map(function(control, i) {
 

@@ -15,7 +15,6 @@
         }
 
   function submitGoogleForm(form) {
-
     try {
        if ($('.chat-cover label').length == 0) {
           alertify.error("complete the form.");
