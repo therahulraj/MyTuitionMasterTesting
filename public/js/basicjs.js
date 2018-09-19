@@ -1,5 +1,13 @@
 $(document).ready(function() {
   var $win = $(window);
+  var _originalSize = $(window).height()
+$(window).resize(function(){
+  if($(window).height() != _originalSize){
+    $('.chat-cover').addClass('mobile-keypad');
+  }else{
+  $('.chat-cover').removeClass('mobile-keypad');  
+  }
+});
   $('.svg-hamburger').on('click', function () {
       $('.navbar-content').toggleClass('navbar-content-slide');
       $('body').toggleClass('stop-scrolling');

@@ -1043,6 +1043,11 @@ height: 200px;
     bottom: 0;
     margin-bottom: 20%;
   }
+  .chat-cover.mobile-keypad button {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 5%;
+  }
 .chat-row6 {
   margin-top: 0px;
   position: absolute;
