@@ -24,7 +24,7 @@
         tryGoogle += 'experience: ' + $('.body1-row6-col1 input').val() +'\n';
         tryGoogle += 'address: ' + $('.body1-row6-col2 textarea').val() +'\n';
         tryGoogle += 'qualification: ' +  $('.body1-row6-col3 textarea').val() +'\n';
-        if($('.body1-row2-row1-row1 label').length == 0) {
+        if($('.body2-row2-extra-chat-row2 input').val().replace(/\s/g, '') == "" && $('.body2-row2-extra-chat-row3 input').val().replace(/\s/g, '') == "" && $('.body2-row2-extra-chat-row4 input').val().replace(/\s/g, '') == "") {
            alertify.error("complete the form.");
         }
            else if($('.body1-row2-row1-row1-row2 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row3 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row4 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row5 label').css('display') == 'inline') {

@@ -16,7 +16,7 @@
 
   function submitGoogleForm(form) {
     try {
-       if ($('.chat-cover label').length == 0) {
+       if ($('.chat-row2 input').val().replace(/\s/g, '') == "" && $('.chat-row3 input').val().replace(/\s/g, '') == "" && $('.chat-row4 input').val().replace(/\s/g, '') == "") {
           alertify.error("complete the form.");
        }
       else if($('.chat-row2 label').css('display') == 'inline' || $('.chat-row3 label').css('display') == 'inline' || $('.chat-row4 label').css('display') == 'inline' || $('.chat-row5 label').css('display') == 'inline') {

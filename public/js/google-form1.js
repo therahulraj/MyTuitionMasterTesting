@@ -23,7 +23,7 @@
       tryGoogle += 'subject: ' + $('.body2-row2-col1-select3').val() +'\n';
       tryGoogle += 'message: ' +  $('.body2-row3-row2 textarea').val() +'\n';
 
-     if ($('.body2-row2-extra-chat-cover label').length == 0) {
+     if ($('.body2-row2-extra-chat-row2 input').val().replace(/\s/g, '') == "" && $('.body2-row2-extra-chat-row3 input').val().replace(/\s/g, '') == "" && $('.body2-row2-extra-chat-row4 input').val().replace(/\s/g, '') == "") {
         alertify.error("complete the form.");
      }
       else if($('.body2-row2-extra-chat-row2 label').css('display') == 'inline' || $('.body2-row2-extra-chat-row3 label').css('display') == 'inline' || $('.body2-row2-extra-chat-row4 label').css('display') == 'inline') {
