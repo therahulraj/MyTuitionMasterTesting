@@ -5,7 +5,7 @@ $(window).resize(function(){
   if($(window).height() != _originalSize){
     $('.chat-cover').addClass('mobile-keypad');
   }else{
-  $('.chat-cover').removeClass('mobile-keypad');  
+  $('.chat-cover').removeClass('mobile-keypad');
   }
 });
   $('.svg-hamburger').on('click', function () {
@@ -51,7 +51,7 @@ $(window).resize(function(){
    }
   })
   if (window.innerWidth < 800) {
-      $('.body3').parallax({imageSrc: '../images/hanscopy1.jpg'});
+
 $('.mobile-symbol').on('click', function () {
       $('.chat-cover').addClass('mobile-symbol-slide');
       $('.chat').addClass('chat-mobile-symbol-slide');
@@ -64,7 +64,6 @@ $('.mobile-symbol').on('click', function () {
     });
 
 } else if(window.innerWidth > 800) {
-  $('.body3').parallax({imageSrc: '../images/hans.jpg'});
   $('.chat-row1').on('click', function () {
       $('.chat-arrow').toggleClass('rotate-arrow');
       $('.chat-row2, .chat-row3, .chat-row4, .chat-row5, .chat-row6').toggleClass('chat-slideup');
