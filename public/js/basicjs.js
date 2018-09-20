@@ -1,6 +1,8 @@
 $(document).ready(function() {
   var $win = $(window);
   var _originalSize = $(window).height();
+  var num = parseInt($.trim($('.count').html()));
+  console.log(num);
 $(window).resize(function(){
   if($(window).height() != _originalSize){
     $('.chat-cover').addClass('mobile-keypad');
@@ -8,6 +10,17 @@ $(window).resize(function(){
   $('.chat-cover').removeClass('mobile-keypad');
   }
 });
+$("input[type='checkbox']").change(function () {
+    console.log(num)
+  if(this.checked) {
+      $('.count').html(++num);
+      console.log(num)
+  } else {
+      $('.count').html(--num);
+  }
+
+})
+
   $('.svg-hamburger').on('click', function () {
       $('.navbar-content').toggleClass('navbar-content-slide');
       $('body').toggleClass('stop-scrolling');
