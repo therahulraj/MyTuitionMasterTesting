@@ -15,6 +15,11 @@
         }
 
   function submitGoogleForm(form) {
+    var data = [].slice.call(form).map(function(control) {
+            return 'value' in control && control.name ?
+              control.name + '=' + (control.value === undefined ? '' : 'chat: ' + control.value) :
+              '';
+          }).join('&');
     try {
        if ($('.chat-row2 input').val().replace(/\s/g, '') == "" && $('.chat-row3 input').val().replace(/\s/g, '') == "" && $('.chat-row4 input').val().replace(/\s/g, '') == "") {
           alertify.error("complete the form.");
@@ -23,18 +28,12 @@
         reset();
          alertify.error("Fill up the form correctly.");
     } else {
+
       reset();
       alertify.success("your message was sent successfully.");
+
     }
-
-
-      var data = [].slice.call(form).map(function(control) {
-        return 'value' in control && control.name ?
-          control.name + '=' + (control.value === undefined ? '' : 'chat: ' + control.value) :
-          '';
-      }).join('&');
-      var xhr = new XMLHttpRequest();
-
+     var xhr = new XMLHttpRequest();
       xhr.open('POST', form.action + '/formResponse', true);
       xhr.setRequestHeader('Accept',
           'application/xml, text/xml, */*; q=0.01');

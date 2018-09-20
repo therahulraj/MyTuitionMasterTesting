@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var $win = $(window);
-  var _originalSize = $(window).height()
+  var _originalSize = $(window).height();
 $(window).resize(function(){
   if($(window).height() != _originalSize){
     $('.chat-cover').addClass('mobile-keypad');
@@ -17,6 +17,9 @@ $(window).resize(function(){
     });
     $('.body2-row3-button2 button').on('click', function () {
       window.location.href = "/getTutor";
+    })
+    $('.selectBox').on('click', function () {
+      $('#checkboxes').toggleClass('showCheckboxes');
     })
     $('.getTutorNav').on('click', function () {
       window.location.href = "/getTutor";

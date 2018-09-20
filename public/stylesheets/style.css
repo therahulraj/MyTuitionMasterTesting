@@ -80,15 +80,14 @@ justify-content: center;
 align-items: center;
 
 }
-
-.svg-logo {
- height: 70px;
- width: 100px;
+.logo img {
+  width: 60px;
+  color: #fff;
 }
 .title {
   text-align: center;
   color: #fff;
-  line-height: 20px;
+  line-height: 15px;
   font-family: 'Baloo Bhai', cursive;
 
 }
@@ -103,37 +102,6 @@ align-items: center;
   height: 50px;
   width: 50px;
   cursor: pointer;
-}
-.logo-path1 {
-stroke-dasharray: 200;
-stroke-dashoffset: 200;
-animation: logo-path1 .7s ease-in .5s forwards;
-}
-.logo-path2 {
-  stroke-dasharray: 130;
-  stroke-dashoffset: 130;
-  animation: logo-path2 1s ease-in 1.5s forwards;
-}
-.logo-path3 {
-  stroke-dasharray: 130;
-  stroke-dashoffset: 130;
-  animation: logo-path2 1s ease-in 1.5s forwards;
-}
-@keyframes logo-path1 {
-  from {
-    stroke-dashoffset: 200;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes logo-path2 {
-  from {
-    stroke-dashoffset: 130;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
 }
 
 
@@ -415,6 +383,7 @@ margin-top: 15px;
 .body2 {
   margin-top: 50px;
   font-family: 'Work Sans', sans-serif;
+  z-index: -1;
 }
 .body2-row1 {
   text-align: center;
@@ -560,6 +529,68 @@ height: 200px;
   box-shadow: 0px 0px 30px #ccc;
   transition: all .2s;
 }
+.body2-row3-row2 {
+ z-index: -1;
+ position: relative;
+ top: 0;
+ bottom: 0;
+}
+
+
+
+.multiselect {
+  display: flex;
+  flex-direction: column;
+}
+.selectBox {
+margin: 0 30px;
+padding: 15px 30px;
+font-family: 'Work Sans', sans-serif;
+font-size: 20px;
+border-radius: 3px;
+border: 1px solid #ccc;
+box-shadow: 0px 0px 8px #ccc;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+  z-index: 100;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#checkboxes div {
+  padding: 5px 30px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  border-radius: 3px;
+}
+#checkboxes.showCheckboxes {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+#checkboxes label {
+  display: block;
+}
+#checkboxes p {
+  display: inline-block;
+}
+
+input[type='checkbox'] {
+  width:15px;
+    height:15px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+
+
+
 
 
 .body3 {
@@ -882,6 +913,7 @@ height: 200px;
   }
   .body2-row3-row2 {
     padding: 0 10px;
+
   }
 
 }

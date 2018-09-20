@@ -64,14 +64,14 @@ align-items: center;
 
 }
 
-.svg-logo {
- height: 70px;
- width: 100px;
+.logo img {
+  width: 60px;
+  color: #fff;
 }
 .title {
   text-align: center;
   color: #fff;
-  line-height: 20px;
+  line-height: 15px;
   font-family: 'Baloo Bhai', cursive;
 
 }
