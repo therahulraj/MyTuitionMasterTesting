@@ -1,14 +1,8 @@
 $(document).ready(function() {
   var $win = $(window);
-  var _originalSize = $(window).height();
   var num = parseInt($.trim($('.count').html()));
   console.log(num);
 $(window).resize(function(){
-  if($(window).height() != _originalSize){
-    $('.chat-cover').addClass('mobile-keypad');
-  }else{
-  $('.chat-cover').removeClass('mobile-keypad');
-  }
 });
 $("input[type='checkbox']").change(function () {
     console.log(num)

@@ -485,12 +485,10 @@ height: 200px;
 }
 .body2-row3 {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: center;
+}
 
-}
-.body2-row3-button1, .body2-row3-button2 {
-  width: 50%;
-}
 .body2-row3  div {
   text-align: center;
   margin-top: 40px;
@@ -1056,10 +1054,7 @@ input[type='checkbox'] {
    box-shadow: 0px 0px 0px  rgba(0,0,0,0);
 
   }
-  .chat-cover.mobile-keypad {
-    justify-content: center;
-    align-items: center;
-  }
+
   .chat-row2, .chat-row3, .chat-row4, .chat-row5 {
     padding: 0;
     margin: 0;
@@ -1100,11 +1095,6 @@ input[type='checkbox'] {
   .chat-cover .chat-row6  {
     position: relative;
     top: 0;
-  }
-  .chat-cover.mobile-keypad button {
-    position: fixed;
-    bottom: 0;
-    margin-bottom: 3%;
   }
 .chat-row6 {
   margin-top: 0px;
