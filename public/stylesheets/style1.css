@@ -728,6 +728,10 @@ input[type='checkbox'] {
 
 
 @media (max-width: 800px) {
+  .body1-row2-row1-row1 > div > textarea {
+      width: 280px;
+      margin: 10px 0 0 30px;
+  }
   .body1 > p {
     padding: 20px 0;
   }
@@ -741,9 +745,6 @@ input[type='checkbox'] {
   .body1-row2-row1-row1 > div {
   margin-top: 25px;
 }
-  .body1-row2-row1-row1 > div > textarea {
-      width: 250px;
-  }
   .body1-row3 {
     font-size: 35px;
 
@@ -756,9 +757,6 @@ input[type='checkbox'] {
   }
   .body1-row6 > div {
     margin-top: 40px;
-  }
-  .body1-row6 > div:nth-child(2) {
-
   }
   .body1-row6 div textarea {
     width: 250px;
