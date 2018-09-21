@@ -1048,7 +1048,7 @@ input[type='checkbox'] {
   .chat-cover  {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center
+    justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0);
     border: 0px;
@@ -1092,13 +1092,14 @@ input[type='checkbox'] {
     height: 80px;
     display: inline-block;
   }
-  .chat-cover button {
-
+  .chat-cover .chat-row6  {
+    position: relative;
+    top: 0;
   }
-  .chat-cover.mobile-keypad button {
+  .chat-cover.mobile-keypad .chat-row6 {
     position: fixed;
     bottom: 0;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
   }
 .chat-row6 {
   margin-top: 0px;
