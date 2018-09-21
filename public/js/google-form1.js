@@ -17,10 +17,14 @@
   function submitGoogleForm1(form) {
 
     try {
+      var val = [];
+       $(':checkbox:checked').each(function(i){
+         val[i] = $(this).val();
+       });
       var tryGoogle = 'intro details: \n';
       tryGoogle += 'location: ' + $('.body2-row2-col1-select1').val() +'\n';
       tryGoogle +=  'class: ' + $('.body2-row2-col1-select2').val() +'\n';
-      tryGoogle += 'subject: ' + $('.body2-row2-col1-select3').val() +'\n';
+      tryGoogle += 'subject: ' + val + '\n';
       tryGoogle += 'message: ' +  $('.body2-row3-row2 textarea').val() +'\n';
 
      if ($('.body2-row2-extra-chat-row2 input').val().replace(/\s/g, '') == "" && $('.body2-row2-extra-chat-row3 input').val().replace(/\s/g, '') == "" && $('.body2-row2-extra-chat-row4 input').val().replace(/\s/g, '') == "") {

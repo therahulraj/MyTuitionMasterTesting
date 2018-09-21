@@ -1,4 +1,43 @@
 $(document).ready(function () {
+    var num = parseInt($.trim($('.count').html()));
+    var num1 = parseInt($.trim($('.count1').html()));
+    var num2 = parseInt($.trim($('.count2').html()));
+    $(".checkbox1[type='checkbox']").change(function () {
+        console.log(num)
+      if(this.checked) {
+          $('.count').html(++num);
+          console.log(num)
+      } else {
+          $('.count').html(--num);
+      }
+    })
+    $(".checkbox2[type='checkbox']").change(function () {
+        console.log(num)
+      if(this.checked) {
+          $('.count1').html(++num1);
+          console.log(num)
+      } else {
+          $('.count1').html(--num1);
+      }
+    })
+    $(".checkbox3[type='checkbox']").change(function () {
+        console.log(num)
+      if(this.checked) {
+          $('.count2').html(++num2);
+          console.log(num)
+      } else {
+          $('.count2').html(--num2);
+      }
+    })
+    $('.selectBox').on('click', function () {
+      $('#checkboxes').toggleClass('showCheckboxes');
+    });
+    $('.selectBox1').on('click', function () {
+      $('#checkboxes1').toggleClass('showCheckboxes');
+    });
+    $('.selectBox2').on('click', function () {
+      $('#checkboxes2').toggleClass('showCheckboxes');
+    });
 $('.svg-hamburger').on('click', function () {
     $('.navbar-content').toggleClass('navbar-content-slide');
     $('body').toggleClass('stop-scrolling');

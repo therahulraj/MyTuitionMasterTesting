@@ -1,5 +1,17 @@
 $(document).ready(function () {
   var $win = $(window);
+  var num2 = parseInt($.trim($('.count2').html()));
+$(".checkbox3[type='checkbox']").change(function () {
+
+    if(this.checked) {
+        $('.count2').html(++num2);
+    } else {
+        $('.count2').html(--num2);
+    }
+  })
+  $('.selectBox2').on('click', function () {
+    $('#checkboxes2').toggleClass('showCheckboxes');
+  });
 $('.svg-hamburger').on('click', function () {
     $('.navbar-content').toggleClass('navbar-content-slide');
     $('body').toggleClass('stop-scrolling');

@@ -17,10 +17,22 @@
   function submitGoogleForm(form) {
 
     try {
+      var val1 = [];
+      var val2 = [];
+      var val3 = [];
+       $('.checkbox1:checkbox:checked').each(function(i){
+         val1[i] = $(this).val();
+       });
+       $('.checkbox2:checkbox:checked').each(function(i){
+          val2[i] = $(this).val();
+        });
+        $('.checkbox3:checkbox:checked').each(function(i){
+           val3[i] = $(this).val();
+         });
         var tryGoogle = 'turtor details: \n';
-        tryGoogle += 'location: ' + $('.body1-row5-select1').val() +'\n';
-        tryGoogle +=  'class: ' + $('.body1-row5-select2').val() +'\n';
-        tryGoogle += 'subject: ' + $('.body1-row5-select3').val() +'\n';
+        tryGoogle += 'location: ' + val1 +'\n';
+        tryGoogle +=  'classes: ' + val3 +'\n';
+        tryGoogle += 'subjects: ' + val2 +'\n';
         tryGoogle += 'experience: ' + $('.body1-row6-col1 input').val() +'\n';
         tryGoogle += 'address: ' + $('.body1-row6-col2 textarea').val() +'\n';
         tryGoogle += 'qualification: ' +  $('.body1-row6-col3 textarea').val() +'\n';

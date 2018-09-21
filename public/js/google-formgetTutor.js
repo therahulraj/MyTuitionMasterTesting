@@ -18,10 +18,14 @@
   function submitGoogleForm(form) {
 
     try {
+      var val3 = [];
+      $('.checkbox3:checkbox:checked').each(function(i){
+         val3[i] = $(this).val();
+       });
       var tryGoogle = 'student details: \n';
       tryGoogle += 'location: ' + $('.body1-row3-col1-select1').val() +'\n';
       tryGoogle +=  'class: ' + $('.body1-row3-col2-select2').val() +'\n';
-      tryGoogle += 'subject: ' + $('.body1-row3-col3-select3').val() +'\n';
+      tryGoogle += 'subject: ' + val3 +'\n';
       tryGoogle += 'gender: ' + $('.body1-row4-col1-select1').val() +'\n';
       tryGoogle += 'timing: ' + $('.body1-row4-col2 input').val() +'\n';
       tryGoogle += 'message: ' +  $('.body1-row4-col3 textarea').val() +'\n';
