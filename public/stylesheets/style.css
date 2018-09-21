@@ -1044,6 +1044,8 @@ input[type='checkbox'] {
 
   .chat.chat-mobile-symbol-slide {
     top: 0;
+    bottom: 0;
+    height: 100vh;
   }
   .chat-cover  {
     display: flex;
@@ -1061,7 +1063,6 @@ input[type='checkbox'] {
     line-height: 8px;
   }
   .chat-cover.mobile-symbol-slide {
-    height: 100vh;
     background-color: rgba(0,0,0,0.9);
     position: absolute;
     top: 0;
@@ -1096,10 +1097,10 @@ input[type='checkbox'] {
     position: relative;
     top: 0;
   }
-  .chat-cover.mobile-keypad .chat-row6 {
+  .chat-cover.mobile-keypad button {
     position: fixed;
     bottom: 0;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
   }
 .chat-row6 {
   margin-top: 0px;
