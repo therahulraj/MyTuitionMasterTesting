@@ -98,7 +98,6 @@ align-items: center;
   right: 0;
 }
 .svg-hamburger {
-
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -843,7 +842,7 @@ input[type='checkbox'] {
   font-size: 30px;
 }
 .footer-row2-row3-row2 {
-  font-size: 25px;
+  font-size: 30px;
   font-family: 'Work Sans', sans-serif;
 }
 .footer-row3 {
@@ -988,13 +987,15 @@ input[type='checkbox'] {
 .footer-row2-col2 {
   margin-top: 50px;
 }
-.body3 {
-
-}
 }
 
 
 @media (max-width: 800px) {
+  .svg-hamburger {
+    height: 40px;
+    width: 40px;
+  }
+
   .top-head {
     background-image: url("./../images/peter-hershey3.jpg");
     background-size: cover;
@@ -1111,8 +1112,8 @@ input[type='checkbox'] {
       background-color: rgba(0,0,0,0.95);
     }
     .footer-row2-col1 div iframe {
-      height: 400px;
-      width: 350px;
+      height: 380px;
+      width: 320px;
     }
 }
 
@@ -1159,9 +1160,9 @@ input[type='checkbox'] {
      .footer-row1-row1-col3 {
        width: 20%;
      }
-     .footer-row2-col1 iframe {
-       height: 300px;
-       width: 280px;
+     .footer-row2-col1 div iframe {
+       height: 380px;
+       width: 320px;
      }
 .footer-row2-col2 {
   width: 90%;
@@ -1179,7 +1180,7 @@ input[type='checkbox'] {
   font-size: 25px;
 }
 .footer-row2-row3-row2 {
-  font-size: 17px;
+  font-size: 23px;
 }
 
 .body2-row3-row2 textarea {

@@ -84,7 +84,6 @@ align-items: center;
 .svg-hamburger {
   height: 50px;
   width: 50px;
-  margin-right: 20px;
    cursor: pointer;
    -webkit-touch-callout: none; /* iOS Safari */
    -webkit-user-select: none; /* Safari */
@@ -94,37 +93,7 @@ align-items: center;
            user-select: none; /* Non-prefixed version, currently
                                  supported by Chrome and Opera */
 }
-.logo-path1 {
-stroke-dasharray: 200;
-stroke-dashoffset: 200;
-animation: logo-path1 .7s ease-in .5s forwards;
-}
-.logo-path2 {
-  stroke-dasharray: 130;
-  stroke-dashoffset: 130;
-  animation: logo-path2 1s ease-in 1.5s forwards;
-}
-.logo-path3 {
-  stroke-dasharray: 130;
-  stroke-dashoffset: 130;
-  animation: logo-path2 1s ease-in 1.5s forwards;
-}
-@keyframes logo-path1 {
-  from {
-    stroke-dashoffset: 200;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes logo-path2 {
-  from {
-    stroke-dashoffset: 130;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
+
 @keyframes underline {
   from {
     width: 0%;
@@ -364,14 +333,31 @@ animation: logo-path1 .7s ease-in .5s forwards;
   padding: 10px;
   font-size: 20px;
   background-color: rgba(0,0,0,0);
-
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px #000;
+  color: #000;
+}
+.body1-row7-extra div p {
+  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
+  color: #000;
+  opacity: .5;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.body1-row7-extra div textarea {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0);
   border-radius: 3px;
   box-shadow: 0px 0px 10px #000;
   color: #000;
 }
 .body1-row7 {
+  margin-top: 30px;
   padding-bottom: 30px;
-
 }
 .body1-row7-row1 {
   display: inline-block;
@@ -411,7 +397,9 @@ animation: logo-path1 .7s ease-in .5s forwards;
     box-shadow: 0px 0px 10px #ccc;
     transition: all .2s;
 }
-
+.body-row7-row1 span {
+  font-weight: 600;
+}
 
 
 
@@ -702,9 +690,6 @@ input[type='checkbox'] {
 
 
 @media (max-width: 1000px) {
-  .hamburger {
-  margin-right: 20px;
-}
 .navbar-content {
   width: 60vw;
 }
@@ -736,6 +721,10 @@ input[type='checkbox'] {
 
 
 @media (max-width: 800px) {
+  .svg-hamburger {
+    height: 40px;
+    width: 40px;
+  }
   .body1-row2-row1-row1 > div > textarea {
       width: 280px;
       margin: 10px 0 0 30px;
@@ -779,8 +768,8 @@ input[type='checkbox'] {
       padding: 5px 0px;
     }
     .footer-row2-col1 div iframe {
-      height: 400px;
-      width: 350px;
+      height: 380px;
+      width: 320px;
     }
 }
 
@@ -820,7 +809,7 @@ input[type='checkbox'] {
   font-size: 15px;
 }
 .footer-row2-row3-row2 {
-  font-size: 17px;
+  font-size: 23px;
 }
 .body1-row2-row1-row1 > div {
       margin: 25px 0;

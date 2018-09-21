@@ -83,7 +83,6 @@ align-items: center;
 .svg-hamburger {
   height: 50px;
   width: 50px;
-  margin-right: 20px;
    cursor: pointer;
    -webkit-touch-callout: none; /* iOS Safari */
    -webkit-user-select: none; /* Safari */
@@ -93,37 +92,7 @@ align-items: center;
            user-select: none; /* Non-prefixed version, currently
                                  supported by Chrome and Opera */
 }
-.logo-path1 {
-stroke-dasharray: 200;
-stroke-dashoffset: 200;
-animation: logo-path1 .7s ease-in .5s forwards;
-}
-.logo-path2 {
-  stroke-dasharray: 130;
-  stroke-dashoffset: 130;
-  animation: logo-path2 1s ease-in 1.5s forwards;
-}
-.logo-path3 {
-  stroke-dasharray: 130;
-  stroke-dashoffset: 130;
-  animation: logo-path2 1s ease-in 1.5s forwards;
-}
-@keyframes logo-path1 {
-  from {
-    stroke-dashoffset: 200;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes logo-path2 {
-  from {
-    stroke-dashoffset: 130;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
+
 @keyframes underline {
   from {
     width: 0%;
@@ -402,7 +371,7 @@ animation: logo-path1 .7s ease-in .5s forwards;
 }
 .body1-row5 {
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: column;
   align-items: center;
   padding: 0 0 30px 0;
   margin-top: 30px;
@@ -418,14 +387,16 @@ animation: logo-path1 .7s ease-in .5s forwards;
   border: 1.5px solid #ccc;
   box-shadow: 0px 0px 10px #000;
   cursor: pointer;
-
 }
 .body1-row5 p {
-  font-size: 15px;
+  font-size: 20px;
   font-family: 'Work Sans', sans-serif;
   color: #000;
   padding: 0 30px;
-  font-weight: 500;
+  font-weight: 400;
+}
+.body1-row5 span {
+  font-weight: 600;
 }
 .body1 input:focus {
     box-shadow: 0px 0px 25px #ccc;
@@ -653,9 +624,6 @@ input[type='checkbox'] {
 }
 
 @media (max-width: 1000px) {
-  .hamburger {
-  margin-right: 20px;
-}
 .navbar-content {
   width: 60vw;
 }
@@ -688,6 +656,10 @@ input[type='checkbox'] {
 }
 }
 @media (max-width: 800px) {
+  .svg-hamburger {
+    height: 40px;
+    width: 40px;
+  }
   #checkboxes2 div {
    margin-left: 20px;
   }
@@ -707,7 +679,7 @@ input[type='checkbox'] {
     .body1-row2-row1-row1 > div > textarea {
         width: 280px;
         margin: 10px 0 0 30px;
-    }
+  }
   .body1-row1 + p {
     font-size: 35px;
     padding-top: 40px;
@@ -731,17 +703,11 @@ input[type='checkbox'] {
       padding: 5px 0px;
     }
     .footer-row2-col1 div iframe {
-      height: 400px;
-      width: 350px;
+      height: 380px;
+      width: 320px;
     }
 }
 @media (max-width: 500px) {
-/* .top-head {
-  background-image: url("./../images/getTutor1.jpg"),url("./../images/peter-hershey4.jpg");
-  background-size: 100vw 100vh, 100vw 100vh;
-  background-position: left top, 50% left;
-  background-repeat: no-repeat;
-} */
   .navbar-content {
     width: 100vw;
   }
@@ -782,7 +748,7 @@ input[type='checkbox'] {
   font-size: 15px;
 }
 .footer-row2-row3-row2 {
-  font-size: 17px;
+  font-size: 23px;
 }
 .body1-row5 p {
   padding-top: 15px;

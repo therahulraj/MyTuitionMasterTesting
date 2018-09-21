@@ -43,7 +43,7 @@
       var data = [].slice.call(form).map(function(control, i) {
 
         return 'value' in control && control.name ?
-          control.name + '=' + (control.value === undefined ? '' : i != 3 ? 'student details: ' +  control.value : tryGoogle + 'message: ' + control.value) :
+          control.name + '=' + (control.value === undefined ? '' : i != 3 ? 'student details: ' +  control.value : tryGoogle + 'address: ' + control.value) :
           '';
       }).join('&');
       var xhr = new XMLHttpRequest();
