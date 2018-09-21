@@ -534,6 +534,7 @@ height: 200px;
 .multiselect {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .selectBox {
 margin: 0 30px;

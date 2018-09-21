@@ -440,11 +440,6 @@ width: 200px;
   display: none;
   border: 1px #dadada solid;
   z-index: 100;
-  position: relative;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }
 #checkboxes div {
   padding: 5px 20px;
@@ -455,8 +450,7 @@ width: 200px;
 #checkboxes.showCheckboxes {
   display: flex;
   flex-flow: column wrap;
-  align-items: flex-start;
-  justify-content: center;
+  text-align: left;
 }
 #checkboxes label {
   display: block;
@@ -466,8 +460,7 @@ width: 200px;
 .multiselect2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
 }
 .selectBox2 {
 margin: 0 30px;
@@ -512,8 +505,7 @@ width: 200px;
 .multiselect1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
 }
 .selectBox1 {
 margin: 0 30px;
@@ -771,6 +763,15 @@ input[type='checkbox'] {
   .body1-row6 div textarea {
     width: 250px;
     height: 100px;
+    }
+    #checkboxes div {
+      padding: 5px 0px;
+    }
+    #checkboxes1 div {
+      padding: 5px 0px;
+    }
+    #checkboxes2 div {
+      padding: 5px 0px;
     }
 }
 
