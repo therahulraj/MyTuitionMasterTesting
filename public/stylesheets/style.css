@@ -995,6 +995,7 @@ input[type='checkbox'] {
   .svg-hamburger {
     height: 40px;
     width: 40px;
+    margin-right: 20px;
   }
 
   .top-head {
