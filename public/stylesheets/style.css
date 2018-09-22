@@ -1117,6 +1117,9 @@ input[type='checkbox'] {
       height: 380px;
       width: 320px;
     }
+    body > div {
+      width: 100vw;
+    }
 }
 
 @media (max-width: 500px) {
