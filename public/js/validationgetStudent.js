@@ -1,10 +1,10 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-$.validator.addMethod('enterPhoneno', function (value, element) {
-  return this.optional(element)
-  || value.length >= 10
-  && /\d/g.test(value);
-}, 'Please enter valid phone no.')
+  $.validator.addMethod('enterPhoneno', function(value, element) {
+    return this.optional(element) ||
+      value.length >= 10 &&
+      /\d/g.test(value);
+  }, 'Please enter valid phone no.')
 
   $('#chat-validation').validate({
     rules: {
