@@ -83,7 +83,7 @@ $(function() {
   });
     if (window.innerWidth < 800) {
       $(document).on("click", function(e) {
-            $('html,body').animate({scrollTop: $(e.target).offset().top - 30});
+            $('html,body').animate({scrollTop: $(e.target).offset().top - 40});
       });
     }
 })
