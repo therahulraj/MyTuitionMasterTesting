@@ -17,6 +17,7 @@
   function submitGoogleForm1(form) {
 
     try {
+      var content = $('.body2-row2-extra-chat-row3 input').val();
       var val = [];
       $(':checkbox:checked').each(function(i) {
         val[i] = $(this).val();
@@ -28,18 +29,24 @@
       tryGoogle += 'message: ' + $('.body2-row3-row2 textarea').val() + '\n';
 
       if ($('.body2-row2-extra-chat-row2 input').val().replace(/\s/g, '') == "" && $('.body2-row2-extra-chat-row3 input').val().replace(/\s/g, '') == "" && $('.body2-row2-extra-chat-row4 input').val().replace(/\s/g, '') == "") {
-        alertify.error("complete the form.");
+        alertify.error("Complete The Form.");
       } else if ($('.body2-row2-extra-chat-row2 label').css('display') == 'inline' || $('.body2-row2-extra-chat-row3 label').css('display') == 'inline' || $('.body2-row2-extra-chat-row4 label').css('display') == 'inline') {
         reset();
-        alertify.error("Fill up the form correctly.");
+        alertify.error("Fill Up The Form Correctly.");
       } else {
         reset();
-        alertify.success("your message was sent successfully.");
+        alertify.success("Your Message Was Sent Successfully.");
+        $.ajax({
+          type: "POST",
+          url: "/send",
+          dataType: "json",
+          data: {
+            userEmail: content,
+            postType: "introReg"
+          }
+        })
       }
-
-
-
-      var data = [].slice.call(form).map(function(control, i) {
+    var data = [].slice.call(form).map(function(control, i) {
 
         return 'value' in control && control.name ?
           control.name + '=' + (control.value === undefined ? '' : i != 3 ? 'intro details: ' + control.value : tryGoogle + control.value) :

@@ -15,28 +15,28 @@
   }
 
   function submitGoogleForm(form) {
-
+    var content = $('.chat-row3 input').val();
     try {
-      $.post("../mail/php1.php", {
-        name: "whoo", email: "whoo", comments: "he he he"
-      }, function(data) {
-        if(data == "true") {
-          console.log("whoo... it's a success.")
-        } else {
-          console.log(data);
-        }
-      });
       if ($('.chat-row2 input').val().replace(/\s/g, '') == "" && $('.chat-row3 input').val().replace(/\s/g, '') == "" && $('.chat-row4 input').val().replace(/\s/g, '') == "") {
-        alertify.error("complete the form.");
+        alertify.error("Complete The Form.");
+
       } else if ($('.chat-row2 label').css('display') == 'inline' || $('.chat-row3 label').css('display') == 'inline' || $('.chat-row4 label').css('display') == 'inline' || $('.chat-row5 label').css('display') == 'inline') {
         reset();
-        alertify.error("Fill up the form correctly.");
+        alertify.error("Fill Up The Form Correctly.");
       } else {
-
         reset();
-        alertify.success("your message was sent successfully.");
-
+        alertify.success("Your Message Was Sent Successfully.");
+        $.ajax({
+          type: "POST",
+          url: "/send",
+          dataType: "json",
+          data: {
+            userEmail: content,
+            postType: "chat"
+          }
+        })
       }
+
 
       var data = [].slice.call(form).map(function(control) {
         return 'value' in control && control.name ?

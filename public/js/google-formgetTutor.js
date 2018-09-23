@@ -18,6 +18,7 @@
   function submitGoogleForm(form) {
 
     try {
+      var content = $('.body1-row2-row1-row1-row3 input').val();
       var val3 = [];
       $('.checkbox3:checkbox:checked').each(function(i) {
         val3[i] = $(this).val();
@@ -30,13 +31,22 @@
       tryGoogle += 'timing: ' + $('.body1-row4-col2 input').val() + '\n';
       tryGoogle += 'message: ' + $('.body1-row4-col3 textarea').val() + '\n';
       if ($('.body1-row2-row1-row1-row2 input').val().replace(/\s/g, '') == "" && $('.body1-row2-row1-row1-row3 input').val().replace(/\s/g, '') == "" && $('.body1-row2-row1-row1-row4 input').val().replace(/\s/g, '') == "") {
-        alertify.error("Complete the form.");
+        alertify.error("Complete The Form.");
       } else if ($('.body1-row2-row1-row1-row2 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row3 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row4 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row5 label').css('display') == 'inline') {
         reset();
-        alertify.error("Fill up the form correctly.");
+        alertify.error("Fill Up The Form Correctly.");
       } else {
         reset();
-        alertify.success("your message was sent successfully.");
+        alertify.success("Your Message Was Sent Successfully.");
+        $.ajax({
+          type: "POST",
+          url: "/send",
+          dataType: "json",
+          data: {
+            userEmail: content,
+            postType: "studentReg"
+          }
+        })
       }
 
       var data = [].slice.call(form).map(function(control, i) {

@@ -17,6 +17,7 @@
   function submitGoogleForm(form) {
 
     try {
+      var content = $('.body1-row2-row1-row1-row3 input').val();
       var val1 = [];
       var val2 = [];
       var val3 = [];
@@ -37,15 +38,23 @@
       tryGoogle += 'message: ' + $('.body1-row6-col2 textarea').val() + '\n';
       tryGoogle += 'qualification: ' + $('.body1-row6-col3 textarea').val() + '\n';
       if ($('.body1-row2-row1-row1-row2 input').val().replace(/\s/g, '') == "" && $('.body1-row2-row1-row1-row3 input').val().replace(/\s/g, '') == "" && $('.body1-row2-row1-row1-row4 input').val().replace(/\s/g, '') == "") {
-        alertify.error("complete the form.");
+        alertify.error("Complete The Form.");
       } else if ($('.body1-row2-row1-row1-row2 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row3 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row4 label').css('display') == 'inline' || $('.body1-row2-row1-row1-row5 label').css('display') == 'inline') {
         reset();
-        alertify.error("Fill up the form correctly.");
+        alertify.error("Fill Up The Form Correctly.");
 
       } else {
         reset();
-        alertify.success("your message was sent successfully.");
-
+        alertify.success("Your Message Was Sent Successfully.");
+        $.ajax({
+          type: "POST",
+          url: "/send",
+          dataType: "json",
+          data: {
+            userEmail: content,
+            postType: "tutorReg"
+          }
+        })
       }
 
 

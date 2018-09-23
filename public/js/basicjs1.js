@@ -1,9 +1,8 @@
-$(document).ready(function() {
+$(function() {
   var num = parseInt($.trim($('.count').html()));
   var num1 = parseInt($.trim($('.count1').html()));
   var num2 = parseInt($.trim($('.count2').html()));
   $(".checkbox1[type='checkbox']").change(function() {
-    console.log(num)
     if (this.checked) {
       $('.count').html(++num);
       console.log(num)
@@ -12,7 +11,6 @@ $(document).ready(function() {
     }
   })
   $(".checkbox2[type='checkbox']").change(function() {
-    console.log(num)
     if (this.checked) {
       $('.count1').html(++num1);
       console.log(num)
@@ -21,7 +19,6 @@ $(document).ready(function() {
     }
   })
   $(".checkbox3[type='checkbox']").change(function() {
-    console.log(num)
     if (this.checked) {
       $('.count2').html(++num2);
       console.log(num)
@@ -29,9 +26,21 @@ $(document).ready(function() {
       $('.count2').html(--num2);
     }
   })
-  $('.selectBox').on('click', function() {
-    $('#checkboxes').toggleClass('showCheckboxes');
-  });
+    $(".selectBox").on("click", function() {
+      $("#checkboxes").toggleClass("showCheckboxes");
+    });
+    $(document).on("click", function(e) {
+      if ($(e.target).is("#checkboxes, .selectBox") == false) {
+        $("#checkboxes").removeClass("showCheckboxes");
+      }
+      if ($(e.target).is("#checkboxes1, .selectBox1") == false) {
+        $("#checkboxes1").removeClass("showCheckboxes");
+      }
+      if ($(e.target).is("#checkboxes2, .selectBox2") == false) {
+        $("#checkboxes2").removeClass("showCheckboxes");
+      }
+    });
+
   $('.selectBox1').on('click', function() {
     $('#checkboxes1').toggleClass('showCheckboxes');
   });
