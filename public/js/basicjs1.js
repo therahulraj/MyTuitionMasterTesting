@@ -81,4 +81,17 @@ $(function() {
   $('.top-head').parallax({
     imageSrc: '../images/getStudent1.jpg'
   });
+    if (window.innerWidth < 800) {
+      $(document).on("click", function(e) {
+        if ($(e.target).is("#checkboxes, .selectBox, #checkboxes label, #checkboxes input") == false) {
+            $('html,body').animate({scrollTop: $(e.target).offset().top});
+        }
+        if ($(e.target).is("#checkboxes1, .selectBox1, #checkboxes1 label, #checkboxes1 input") == false) {
+            $('html,body').animate({scrollTop: $(e.target).offset().top});
+        }
+        if ($(e.target).is("#checkboxes2, .selectBox2, #checkboxes2 label, #checkboxes2 input") == false) {
+            $('html,body').animate({scrollTop: $(e.target).offset().top});
+        }
+      });
+    }
 })
