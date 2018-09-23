@@ -3,7 +3,6 @@ $(document).ready(function() {
   var num = parseInt($.trim($('.count').html()));
   $(window).resize(function() {});
   $("input[type='checkbox']").change(function() {
-    console.log(num)
     if (this.checked) {
       $('.count').html(++num);
     } else {
@@ -27,7 +26,7 @@ $(document).ready(function() {
   $(document).on("click", function(e) {
     if ($(e.target).is("#checkboxes, .selectBox, #checkboxes label, #checkboxes input") == false) {
       $("#checkboxes").removeClass("showCheckboxes");
-    }
+     }
   });
   $('.getTutorNav').on('click', function() {
     window.location.href = "/getTutor";
