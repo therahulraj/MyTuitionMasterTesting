@@ -30,13 +30,13 @@ $(function() {
       $("#checkboxes").toggleClass("showCheckboxes");
     });
     $(document).on("click", function(e) {
-      if ($(e.target).is("#checkboxes, .selectBox") == false) {
+      if ($(e.target).is("#checkboxes, .selectBox, #checkboxes label, #checkboxes input") == false) {
         $("#checkboxes").removeClass("showCheckboxes");
       }
-      if ($(e.target).is("#checkboxes1, .selectBox1") == false) {
+      if ($(e.target).is("#checkboxes1, .selectBox1, #checkboxes1 label, #checkboxes1 input") == false) {
         $("#checkboxes1").removeClass("showCheckboxes");
       }
-      if ($(e.target).is("#checkboxes2, .selectBox2") == false) {
+      if ($(e.target).is("#checkboxes2, .selectBox2, #checkboxes2 label, #checkboxes2 input") == false) {
         $("#checkboxes2").removeClass("showCheckboxes");
       }
     });
