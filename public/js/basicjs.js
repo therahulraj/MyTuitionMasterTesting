@@ -1,17 +1,16 @@
 $(document).ready(function() {
   var $win = $(window);
   var num = parseInt($.trim($('.count').html()));
-  console.log(num);
   $(window).resize(function() {});
   $("input[type='checkbox']").change(function() {
     console.log(num)
     if (this.checked) {
       $('.count').html(++num);
-      console.log(num)
     } else {
       $('.count').html(--num);
     }
   })
+
   $('.svg-hamburger').on('click', function() {
     $('.navbar-content').toggleClass('navbar-content-slide');
     $('body').toggleClass('stop-scrolling');
@@ -22,9 +21,14 @@ $(document).ready(function() {
   $('.body2-row3-button2 button').on('click', function() {
     window.location.href = "/getTutor";
   })
-  $('.selectBox').on('click', function() {
-    $('#checkboxes').toggleClass('showCheckboxes');
-  })
+  $(".selectBox").on("click", function() {
+    $("#checkboxes").toggleClass("showCheckboxes");
+  });
+  $(document).on("click", function(e) {
+    if ($(e.target).is("#checkboxes, .selectBox, #checkboxes label, #checkboxes input") == false) {
+      $("#checkboxes").removeClass("showCheckboxes");
+    }
+  });
   $('.getTutorNav').on('click', function() {
     window.location.href = "/getTutor";
     $('.navbar-content').removeClass('navbar-content-slide');
@@ -58,7 +62,6 @@ $(document).ready(function() {
     }
   })
   if (window.innerWidth < 800) {
-
     $('.mobile-symbol').on('click', function() {
       $('.chat-cover').addClass('mobile-symbol-slide');
       $('.chat').addClass('chat-mobile-symbol-slide');
@@ -71,8 +74,15 @@ $(document).ready(function() {
       $('.chat-arrow').removeClass('rotate-arrow');
       $('body').removeClass('stop-scrolling');
     });
+    $(document).on("click", function(e) {
+      if ($(e.target).is(".multiselect input, .multiselect label")) {
+          $('html,body').animate({scrollTop: $(e.target).offset().top - 10});
+      } else if ($(e.target).is("#section-2 input, #section-2 select, #section-2 textarea, .selectBox")) {
+          $('html,body').animate({scrollTop: $(e.target).offset().top - 40});
+      }
+    });
   } else if (window.innerWidth > 800) {
-    $('.chat-row1').on('click', function() {
+  $('.chat-row1').on('click', function() {
       $('.chat-arrow').toggleClass('rotate-arrow');
       $('.chat-row2, .chat-row3, .chat-row4, .chat-row5, .chat-row6').toggleClass('chat-slideup');
     });

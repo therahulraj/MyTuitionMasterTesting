@@ -12,6 +12,11 @@ $(document).ready(function() {
   $('.selectBox2').on('click', function() {
     $('#checkboxes2').toggleClass('showCheckboxes');
   });
+  $(document).on("click", function(e) {
+    if ($(e.target).is("#checkboxes2, .selectBox2, #checkboxes2 label, #checkboxes2 input") == false) {
+      $("#checkboxes2").removeClass("showCheckboxes");
+    }
+  });
   $('.svg-hamburger').on('click', function() {
     $('.navbar-content').toggleClass('navbar-content-slide');
     $('body').toggleClass('stop-scrolling');
@@ -46,4 +51,14 @@ $(document).ready(function() {
   $('.top-head').parallax({
     imageSrc: '../images/getTutor1.jpg'
   });
+  if (window.innerWidth < 800) {
+    $(document).on("click", function(e) {
+      if ($(e.target).is("#checkboxes2 input, #checkboxes2 label")) {
+          $('html,body').animate({scrollTop: $(e.target).offset().top -10});
+      } else {
+          $('html,body').animate({scrollTop: $(e.target).offset().top - 40});
+      }
+
+    });
+  }
 })

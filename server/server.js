@@ -45,36 +45,31 @@ app.post('/send', urlencodedParser, (req, res) => {
   let transporter = nodemailer.createTransport({
           host: 'smtpout.asia.secureserver.net',
           port: 80,
-          secure: false, // true for 465, false for other ports
+          secure: false,
           auth: {
-              user: 'contact@mytuitionmaster.com', // generated ethereal user
-              pass: 'rahulraj#7484' // generated ethereal password
-          },
-          tls: {
-            rejectUnauthorized: false
+              user: 'contact@mytuitionmaster.com',
+              pass: 'rahulraj#7484'
           }
       });
 
       // setup email data with unicode symbols
       let mailOptions = {
-          from: '"My Tuition Master" <contact@mytuitionmaster.com>', // sender address
-          to: req.body.userEmail, // list of receivers
-          subject: 'Thank you for getting in touch!', // Subject line
-          text: 'Hello world?', // plain text body
-          html: output // html body
+          from: '"My Tuition Master" <contact@mytuitionmaster.com>',
+          to: req.body.userEmail,
+          subject: 'Thank you for getting in touch!',
+          text: 'Hello world?',
+          html: output
       };
 
-      // send mail with defined transport object
+
       transporter.sendMail(mailOptions, (error, info) => {
           if (error) {
               return console.log(error);
           }
           console.log('Message sent: %s', info.messageId);
-          // Preview only available when sending through an Ethereal account
+
           console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
-          // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-          // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
       });
 })
 

@@ -83,7 +83,13 @@ $(function() {
   });
     if (window.innerWidth < 800) {
       $(document).on("click", function(e) {
+        if ($(e.target).is(".body1-row5 input, .body1-row5 label")) {
+            $('html,body').animate({scrollTop: $(e.target).offset().top - 10});
+        } else {
             $('html,body').animate({scrollTop: $(e.target).offset().top - 40});
+        }
+
       });
     }
+
 })

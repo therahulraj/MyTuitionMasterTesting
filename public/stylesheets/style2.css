@@ -507,7 +507,7 @@ body.stop-scrolling {
 }
 
 #checkboxes2.showCheckboxes {
-  display: flex;
+  display: flex !important;
   flex-flow: column wrap;
   align-items: flex-start;
 }
