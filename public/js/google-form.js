@@ -15,12 +15,17 @@
   }
 
   function submitGoogleForm(form) {
-    var data = [].slice.call(form).map(function(control) {
-      return 'value' in control && control.name ?
-        control.name + '=' + (control.value === undefined ? '' : 'chat: ' + control.value) :
-        '';
-    }).join('&');
+
     try {
+      $.post("../mail/php1.php", {
+        name: "whoo", email: "whoo", comments: "he he he"
+      }, function(data) {
+        if(data == "true") {
+          console.log("whoo... it's a success.")
+        } else {
+          console.log(data);
+        }
+      });
       if ($('.chat-row2 input').val().replace(/\s/g, '') == "" && $('.chat-row3 input').val().replace(/\s/g, '') == "" && $('.chat-row4 input').val().replace(/\s/g, '') == "") {
         alertify.error("complete the form.");
       } else if ($('.chat-row2 label').css('display') == 'inline' || $('.chat-row3 label').css('display') == 'inline' || $('.chat-row4 label').css('display') == 'inline' || $('.chat-row5 label').css('display') == 'inline') {
@@ -32,6 +37,13 @@
         alertify.success("your message was sent successfully.");
 
       }
+
+      var data = [].slice.call(form).map(function(control) {
+        return 'value' in control && control.name ?
+          control.name + '=' + (control.value === undefined ? '' : 'chat: ' + control.value) :
+          '';
+      }).join('&');
+
       var xhr = new XMLHttpRequest();
       xhr.open('POST', form.action + '/formResponse', true);
       xhr.setRequestHeader('Accept',
