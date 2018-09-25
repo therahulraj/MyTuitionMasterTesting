@@ -48,7 +48,7 @@ app.post('/send', urlencodedParser, (req, res) => {
           secure: false,
           auth: {
               user: 'contact@mytuitionmaster.com',
-              pass: 'rahulraj#7484'
+              pass: '************' //pass
           }
       });
 
