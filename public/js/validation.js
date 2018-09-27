@@ -32,8 +32,6 @@ $(document).ready(function() {
       }
     }
   })
-  if ($('.chat-row2 input').val().replace(/\s/g, '') == "" && $('.chat-row3 input').val().replace(/\s/g, '') == "" && $('.chat-row4 input').val().replace(/\s/g, '') == "") {
-    $('.chat-cover input').val("");
-  }
+
 
 })

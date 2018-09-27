@@ -5,7 +5,6 @@ $(function() {
   $(".checkbox1[type='checkbox']").change(function() {
     if (this.checked) {
       $('.count').html(++num);
-      console.log(num)
     } else {
       $('.count').html(--num);
     }
@@ -77,7 +76,7 @@ $(function() {
   $('.homeNav').on('click', function() {
     window.location.href = "/";
     $('.navbar-content').removeClass('navbar-content-slide');
-  })
+  });
   $('.top-head').parallax({
     imageSrc: '../images/getStudent1.jpg'
   });
