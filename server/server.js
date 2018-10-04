@@ -18,16 +18,21 @@ app.get('/', (req, res) => {
 })
 
 
-app.get('/getTutor', (req, res) => {
+app.get('/home-tutors-in-bhopal', (req, res) => {
   res.status(200).sendFile(path.join(__dirname, '..', 'public', 'getTutor.html'));
 });
 
 
-app.get('/getStudent', (req, res) => {
+app.get('/teaching-jobs-in-bhopal', (req, res) => {
   res.status(200).sendFile(path.join(__dirname, '..', 'public', 'getStudent.html'));
 })
 
-
+app.get('/home-tutors-in-bhopal-blog', (req, res) => {
+  res.status(200).sendFile(path.join(__dirname, '..', 'public', 'blogGetTutor.html'));
+});
+app.get('/teaching-jobs-in-bhopal-blog', (req, res) => {
+  res.status(200).sendFile(path.join(__dirname, '..', 'public', 'blogGetStudent.html'));
+});
 
 
 app.post('/send', urlencodedParser, (req, res) => {
@@ -48,7 +53,7 @@ app.post('/send', urlencodedParser, (req, res) => {
           secure: false,
           auth: {
               user: 'contact@mytuitionmaster.com',
-              pass: 'rahulraj#7484' 
+              pass: 'rahulraj#7484'
           }
       });
 
