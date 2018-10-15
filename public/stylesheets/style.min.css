@@ -2292,50 +2292,7 @@ input[type=checkbox] {
 }
 
 @media (max-width:800px) {
-  .body1-extra1 {
-    font-size: 60px;
-    font-weight: 400;
-    color: rgb(255,237,104);
-    line-height: 60px;
-    font-family: 'Anton', sans-serif;
-  }
-  .body1-extra2 {
-    color: #fff;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 17px;
-  }
 
-  .body1-more-extra {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100vw;
-    text-align: center;
-  }
-    .body1-more-extra svg {
-      height: 80px;
-    }
-  .body1-more-extra > div {
-     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
-  .body1-more-extra > div div:first-child {
-    display: inline-block;
-    text-align: center;
-  }
-  .body1-more-extra > div div:nth-child(2) {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 700;
-    font-family: 'Work Sans', sans-serif;
-  }
-.body1-more-extra > div:nth-child(3) div:nth-child(2) {
-  display: none;
-}
   .body3, .top-head {
     background-size: cover
   }
@@ -2345,9 +2302,6 @@ input[type=checkbox] {
   .svg-hamburger {
     height: 40px;
     width: 40px
-  }
-  .top-head {
-    background-color: rgb(0,127,232);
   }
   .body3 {
     background-image: url(../images/hanscopy1.jpg)
@@ -2452,7 +2406,52 @@ input[type=checkbox] {
     width: 320px
   }
 }
+@media (max-width:700px) {
+  .body1-extra1 {
+    font-size: 60px;
+    font-weight: 400;
+    color: rgb(255,237,104);
+    line-height: 60px;
+    font-family: 'Anton', sans-serif;
+  }
+  .body1-extra2 {
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+  }
 
+  .body1-more-extra {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+  }
+    .body1-more-extra svg {
+      height: 80px;
+    }
+  .body1-more-extra > div {
+     display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .body1-more-extra > div div:first-child {
+    display: inline-block;
+    text-align: center;
+  }
+  .body1-more-extra > div div:nth-child(2) {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+  }
+.body1-more-extra > div:nth-child(3) div:nth-child(2) {
+  display: none;
+}
+}
 @media (max-width:500px) {
   .body4-row3, .footer-row3-row3>p {
     margin-top: 20px
