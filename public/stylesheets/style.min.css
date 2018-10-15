@@ -95,7 +95,7 @@
 }
 
 .white-popup-row1 {
-  background-color: rgba(248, 126, 171, 1);
+  background-color: rgba(248, 126, 171, .8);
   font-size: 30px;
   padding: 10px 30px;
   font-weight: 600
@@ -2293,10 +2293,10 @@ input[type=checkbox] {
 
 @media (max-width:800px) {
   .body1-extra1 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 400;
     color: rgb(255,237,104);
-    line-height: 50px;
+    line-height: 60px;
     font-family: 'Anton', sans-serif;
   }
   .body1-extra2 {
@@ -2330,10 +2330,10 @@ input[type=checkbox] {
   .body1-more-extra > div div:nth-child(2) {
     font-size: 20px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
     font-family: 'Work Sans', sans-serif;
   }
-.body1-more-extra > div:nth-child(3) {
+.body1-more-extra > div:nth-child(3) div:nth-child(2) {
   display: none;
 }
   .body3, .top-head {
