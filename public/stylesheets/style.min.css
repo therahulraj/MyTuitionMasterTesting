@@ -91,11 +91,11 @@
 }
 
 .find-tutor1, .navbar-content>a>div>div, .title, .top-description {
-  font-family: 'Baloo Bhai', cursive
+  font-family: 'Work Sans', sans-serif
 }
 
 .white-popup-row1 {
-  background-color: rgba(248, 126, 171, .8);
+  background-color: rgba(248, 126, 171, .6);
   font-size: 30px;
   padding: 10px 30px;
   font-weight: 600
@@ -265,8 +265,8 @@ body.stop-scrolling {
   height: 100vh;
   width: 30vw;
   z-index: 1;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: flex-start;
   background-color: rgba(0, 0, 0, .9)
 }
 
@@ -1033,7 +1033,14 @@ input[type=checkbox] {
   font-size: 20px;
   text-align: center
 }
-
+.navbar-content {
+  width: 20vw
+}
+.navbar-content.navbar-content-slide {
+  position: fixed;
+  top: 0;
+  left: 80vw
+}
 @media (max-width:1300px) {
   .body1-row4 {
     padding: 0 5px
@@ -1046,6 +1053,14 @@ input[type=checkbox] {
   }
   .body2-row3-row2 {
     padding: 0 10px
+  }
+  .navbar-content {
+    width: 20vw
+  }
+  .navbar-content.navbar-content-slide {
+    position: fixed;
+    top: 0;
+    left: 80vw
   }
 }
 
@@ -1072,14 +1087,7 @@ input[type=checkbox] {
     padding: 12px 20px;
     font-size: 1.2em
   }
-  .navbar-content {
-    width: 60vw
-  }
-  .navbar-content.navbar-content-slide {
-    position: fixed;
-    top: 0;
-    left: 40vw
-  }
+
   .body1-row1 h2 {
     font-size: 35px;
     padding: 50px 0 10px
@@ -1112,6 +1120,14 @@ input[type=checkbox] {
   .footer-row2-col2 {
     width: 90%;
     margin-top: 50px
+  }
+  .navbar-content {
+    width: 20vw
+  }
+  .navbar-content.navbar-content-slide {
+    position: fixed;
+    top: 0;
+    left: 80vw
   }
 }
 
@@ -1232,6 +1248,14 @@ input[type=checkbox] {
     height: 380px;
     width: 320px
   }
+  .navbar-content {
+    width: 20vw
+  }
+  .navbar-content.navbar-content-slide {
+    position: fixed;
+    top: 0;
+    left: 80vw;
+  }
 }
 
 @media (max-width:500px) {
@@ -1254,15 +1278,16 @@ input[type=checkbox] {
     padding: 3px 10px
   }
   .navbar-content {
-    width: 100vw
+    width: 20vw
   }
   .navbar-content.navbar-content-slide {
     position: fixed;
     top: 0;
-    left: 0
+    left: 80vw;
   }
   .navbar-content>a>div>div {
-    font-size: 32px
+    font-size: 25px;
+    font-weight: 700;
   }
   .body4-row2 p {
     padding: 0
@@ -1428,13 +1453,13 @@ body.stop-scrolling {
   display: inline-flex;
   flex-flow: column wrap;
   height: 100vh;
-  width: 30vw;
+  width: 20vw;
   z-index: 1;
   align-items: center;
-  justify-content: space-around;
-  background-color: rgba(0, 0, 0, .9)
+  justify-content: flex-start;
+  background-color: #12b886
 }
-
+.navbar-content
 .find-tutor1, .hor-line1, .underline {
   background-color: #fff
 }
@@ -1442,28 +1467,24 @@ body.stop-scrolling {
 .navbar-content.navbar-content-slide {
   position: fixed;
   top: 0;
-  left: 70vw;
+  left: 80vw;
   transition: left .5s
 }
 
-.navbar-content>div {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none
+.navbar-content>a:first-child>div {
+  margin-top: 50px;
 }
 
-.navbar-content>div>div {
+.navbar-content>a>div>div:first-child {
   color: #fff;
-  font-size: 30px
+  font-size: 25px;
+  font-weight: 900;
 }
-
-.navbar-content>div:hover {
-  cursor: pointer
+.navbar-content>a>div {
+  margin-top: 20px;
 }
-
 .underline {
-  margin-top: -5px;
+  margin-top: 0px;
   height: 4px;
   width: 0%;
   border-radius: 20px
@@ -1471,25 +1492,6 @@ body.stop-scrolling {
 
 .navbar-content>div:hover>.underline {
   animation: underline .5s forwards
-}
-
-.top-description {
-  position: relative;
-  top: 10vh;
-  left: 60vw;
-  display: inline-block;
-  color: #fff;
-  z-index: 0
-}
-
-.top-description-head {
-  font-size: 3em;
-  line-height: 50px;
-  text-shadow: 0 0 10px #fff
-}
-
-.top-description-par {
-  font-size: 1.5em
 }
 
 .hor-line1 {
@@ -2209,6 +2211,14 @@ input[type=checkbox] {
   font-size: 20px;
   text-align: center
 }
+.navbar-content {
+  width: 20vw
+}
+.navbar-content.navbar-content-slide {
+  position: fixed;
+  top: 0;
+  left: 80vw
+}
 
 @media (max-width:1300px) {
   .body1-row4 {
@@ -2223,38 +2233,31 @@ input[type=checkbox] {
   .body2-row3-row2 {
     padding: 0 10px
   }
+  .navbar-content {
+    width: 20vw
+  }
+  .navbar-content.navbar-content-slide {
+    position: fixed;
+    top: 0;
+    left: 80vw
+  }
 }
 
 @media (max-width:1000px) {
   .arrow-intro {
     display: none
   }
-  .top-description {
-    top: 10vh;
-    left: 50vw;
-    text-align: center;
-    font-family: 'Baloo Bhai', cursive;
-    color: #fff;
-    z-index: 0
-  }
-  .top-description-head {
-    font-size: 2.5em;
-    line-height: 40px
-  }
-  .top-description-par {
-    font-size: 1.5em
-  }
   .find-tutor1 {
     padding: 12px 20px;
     font-size: 1.2em
   }
   .navbar-content {
-    width: 60vw
+    width: 20vw
   }
   .navbar-content.navbar-content-slide {
     position: fixed;
     top: 0;
-    left: 40vw
+    left: 80vw
   }
   .body1-row1 h2 {
     font-size: 35px;
@@ -2289,10 +2292,31 @@ input[type=checkbox] {
     width: 90%;
     margin-top: 50px
   }
+  .navbar-content {
+    width: 30vw
+  }
+  .navbar-content.navbar-content-slide {
+    position: fixed;
+    top: 0;
+    left: 70vw
+  }
+  .navbar-content>a>div>div:first-child {
+    font-size: 25px
+  }
 }
 
 @media (max-width:800px) {
-
+  .navbar-content {
+    width: 35vw
+  }
+  .navbar-content.navbar-content-slide {
+    position: fixed;
+    top: 0;
+    left: 65vw
+  }
+  .navbar-content>a>div>div:first-child {
+    font-size: 22px
+  }
   .body3, .top-head {
     background-size: cover
   }
@@ -2407,6 +2431,17 @@ input[type=checkbox] {
   }
 }
 @media (max-width:700px) {
+  .navbar-content {
+    width: 40vw
+  }
+  .navbar-content.navbar-content-slide {
+    position: fixed;
+    top: 0;
+    left: 60vw
+  }
+  .top-head {
+    height: auto;
+  }
   .body1-extra1 {
     font-size: 60px;
     font-weight: 400;
@@ -2448,8 +2483,9 @@ input[type=checkbox] {
     font-weight: 700;
     font-family: 'Work Sans', sans-serif;
   }
-.body1-more-extra > div:nth-child(3) div:nth-child(2) {
-  display: none;
+.body1-more-extra > div:nth-child(3) {
+  margin-top: 20px;
+  padding-bottom: 30px;
 }
 }
 @media (max-width:500px) {
@@ -2472,14 +2508,14 @@ input[type=checkbox] {
     padding: 3px 10px
   }
   .navbar-content {
-    width: 100vw
+    width: 55vw;
   }
   .navbar-content.navbar-content-slide {
     position: fixed;
     top: 0;
-    left: 0
+    left: 45vw;
   }
-  .navbar-content>div>div {
+  .navbar-content>a>div>div:first-child {
     font-size: 20px
   }
   .body4-row2 p {
