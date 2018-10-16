@@ -23,27 +23,43 @@
   }
 }
 .body1-extra {
-  width: 100vw;
   text-align: center;
  display: flex;
  flex-flow: column wrap;
  margin-top: -50px;
+ display: inline-block;
 }
-.body1-extra span {
-  font-size: 25px;
-  margin-bottom: -10px;
-}
+
 .body1-extra1 {
-  font-size: 100px;
+  width: 100vw;
   font-weight: 400;
   color: rgb(255,237,104);
   line-height: 100px;
+  font-size: 100px;
   font-family: 'Anton', sans-serif;
 }
 .body1-extra2 {
   color: #fff;
   font-family: 'Work Sans', sans-serif;
   font-size: 20px;
+  display: inline-block;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+    cursor: pointer;
+}
+.body1-extra2 span {
+}
+.body1-extra2 > div:first-child {
+  display: inline-block;
+  border: 1px solid #fff;
+  padding: 3px 5px;
+  border-radius: 3px;
+}
+.body1-extra2 > div:nth-child(2) {
+  display: inline-block;
+  transform: scale(2.2, 2.2);
 }
 .body1-more-extra svg {
   height: 150px;
@@ -1339,7 +1355,7 @@ input[type=checkbox] {
 }
 
 .find-tutor1, .navbar-content>div, .title, .top-description {
-  font-family: 'Baloo Bhai', cursive
+  font-family: 'Work Sans', sans-serif
 }
 
 .body1-row1 h2, .body1-row1 p, .body1-row4>div, .body2-row1, .body2-row2-extra-chat-cover, .body2-row2-extra-chat-cover p, .body2-row2-row1, .body2-row2>p, .body2-row3-row2, .chat-cover, .title, .top-description {

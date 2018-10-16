@@ -10,6 +10,9 @@
 .body1, .body1-row7-row1, .title {
   text-align: center
 }
+.title {
+  font-family: 'Work Sans', sans-serif;
+}
 
 .navbar-content>div:hover, .svg-hamburger {
   cursor: pointer
